@@ -1,0 +1,221 @@
+:root{
+
+    /*
+    Use these to change colours
+    */
+
+    --text:#fffbf2;
+    --main-bg:#262626;
+    --fg-one:#AAAAAA;
+    --fg-two:#333333;
+    --fg-three:#333333;
+    --shadow:#100908;
+    --bar-bg:#333333;
+    
+    /*
+    I should have labeled the varibles better, but fuck it.
+    You can figure them out.
+    */
+}
+
+
+* {
+    text-decoration: none;
+    color: var(--text);
+}
+
+html {
+    background: url("background.png") ;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    color: var(--text);
+    font-family: "Ohsnap", monospace;
+    font-size: 13px;
+	font-weight: 500;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body {
+    background-color: var(--main-bg);
+    box-shadow: 5px 5px 5px var(--shadow);
+    margin-right: auto;
+
+    margin-left: auto;
+    text-align: center;
+    height: 400px;
+    padding: 10px 10px 10px 10px;
+    position: static ;
+    z-index: -1;
+    width: 200px;
+}
+
+  input, select, textarea{
+    background: var(--fg-one);
+    width: 70%;
+    height: 30px;
+    padding: 0px 5px 0px 5px;
+    margin-top: -20px;
+
+}
+
+#wrap {
+    background: var(--fg-three);
+    width: 400px;
+    z-index: 1;
+    position: relative;
+    margin: 10px 10px 10px -100px ;
+    height: 6%;
+    box-shadow: 5px 5px 5px var(--shadow);
+    padding: 18px 0px 5px 0px;
+
+}
+
+.links {
+    background: var(--fg-three);
+    width: 280px;
+    z-index: 1;
+    position: relative;
+    margin: 20px 10px 10px -40px ;
+    box-shadow: 5px 5px 5px var(--shadow);
+    padding: 20px 0px 5px 0px;
+    text-align: center;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    text-shadow: 1px 1px var(--shadow);
+}
+
+.hv:hover table {
+    visibility: visible;
+}
+
+td:hover {
+    background: var(--fg-two);
+}
+
+.hv:hover b {
+    color: var(--fg-two);
+}
+
+b{
+    padding: 0px 0px 2px 0px;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    background: var(--fg-three);
+    z-index: 3
+}
+#q {
+    border: 0; border-radius: 1px;
+    font-family: "Ohsnap", monospace;
+	font-weight: 500;
+color: var(--text);
+    text-align: center;
+    box-shadow: 2px 2px 2px var(--main-bg); 
+  }
+
+#left,#right{
+    padding: 5px 0px 5px 0px;
+    display: none;
+    white-space: nowrap;
+}
+
+#left{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    /*
+    margin-right: 120px;
+    margin-left: 10px;
+    /**/
+}
+
+#right {
+     position: absolute;
+    right: 20px;
+    top: 15px;
+    /*
+    margin-left: 100px;
+    /**/
+}
+
+.links:hover{
+    width: 540px;
+    margin-left: -170px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#two:hover{       
+    width: 600px;     
+    margin-left: -200px; 
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#two>#left{
+    margin-right: 100px;
+}
+
+#three:hover{
+    width: 660px;
+    margin-left: -230px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#four:hover{
+    width: 600px;     
+    margin-left: -200px; 
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+/*#four>#left{
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+#four>#right{
+    margin-left: 150px;
+}
+
+/**/
+
+.links:hover #left,.links:hover #right{
+    display: inline;
+}
+
+a{
+    padding: 0px 5px 0px 5px;
+}
+
+
+#block{
+    position: absolute;
+    z-index: 0;
+    background: #885d39;
+    top: 200px;
+    margin: auto;
+    right: 45%;
+    width:100px;
+    height: 400px;
+    box-shadow: 5px 5px 5px var(--main-bg); 
+}
